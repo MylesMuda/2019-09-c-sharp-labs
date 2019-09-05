@@ -6,7 +6,7 @@ namespace lab_16_abstract_class
     {
         static void Main(string[] args)
         {
-            var h = new Holiday();
+            var h = new HolidayWithTravel();
         }
 
         abstract public class Holiday
@@ -20,7 +20,7 @@ namespace lab_16_abstract_class
 
         public class HolidayWithTravel : Holiday
         {
-            public void Travel() { Console.WriteLine("By train, eurostar, hire a car"); }
+            public override void Travel() { Console.WriteLine("By train, eurostar, hire a car"); }
         }
     }
 }

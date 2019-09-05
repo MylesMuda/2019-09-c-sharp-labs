@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam_Rabbit_Explosion", "Sam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_16_abstract_class", "lab_16_abstract_class\lab_16_abstract_class.csproj", "{91679C48-8D08-46BF-BA27-599B947329A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_17_security", "lab_17_security\lab_17_security.csproj", "{1B86AB6C-E61E-4BCB-A3D1-D7E4BA3136A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_18_wpf_rabbit_explosion", "lab_18_wpf_rabbit_explosion\lab_18_wpf_rabbit_explosion.csproj", "{65FFD8BD-7BBF-4DDA-8A5C-3A29939B111D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{91679C48-8D08-46BF-BA27-599B947329A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91679C48-8D08-46BF-BA27-599B947329A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91679C48-8D08-46BF-BA27-599B947329A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B86AB6C-E61E-4BCB-A3D1-D7E4BA3136A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B86AB6C-E61E-4BCB-A3D1-D7E4BA3136A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B86AB6C-E61E-4BCB-A3D1-D7E4BA3136A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B86AB6C-E61E-4BCB-A3D1-D7E4BA3136A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65FFD8BD-7BBF-4DDA-8A5C-3A29939B111D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FFD8BD-7BBF-4DDA-8A5C-3A29939B111D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FFD8BD-7BBF-4DDA-8A5C-3A29939B111D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FFD8BD-7BBF-4DDA-8A5C-3A29939B111D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
