@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using lab_13_test_me_out;
+using Sam_Rabbit_Explosion;
 namespace Tests
 {
     public class Tests
@@ -25,6 +26,15 @@ namespace Tests
         {
             var output = TestMeSomething.RunThisTest(10);
             Assert.AreEqual(expected, output);
+        }
+
+        public void TestRabbitExplosion(int populationLimit, int expYears)
+        {
+            //arrange 
+
+            //act
+            var actualYears = 
+            //assert
         }
     }
 }
