@@ -46,6 +46,12 @@ namespace lab_18_wpf_rabbit_explosion
             
         }
 
+        private void newImage()
+        {
+            //ImageSource imageSource = new ImageSource;
+
+        }
+
         void changeColour(object sender, EventArgs e)
         {
             var rand = new Random();
@@ -53,7 +59,7 @@ namespace lab_18_wpf_rabbit_explosion
             var x = rand.Next(255);
             var y = rand.Next(255);
             var z = rand.Next(255);
-
+            
             //random colour generator
             Label01.Background = new SolidColorBrush(Color.FromRgb((byte)x, (byte)y, (byte)z));
         }
