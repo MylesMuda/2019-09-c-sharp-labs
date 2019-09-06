@@ -3,29 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_09_constructor", "lab_09\lab_09_constructor.csproj", "{99FA11DA-9F17-4FF4-9707-1845B36EB770}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_09_constructor", "lab_09\lab_09_constructor.csproj", "{99FA11DA-9F17-4FF4-9707-1845B36EB770}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_10_overloading", "lab_10_overloading\lab_10_overloading.csproj", "{94946E38-074F-463E-8B7C-5E020DEC65B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_10_overloading", "lab_10_overloading\lab_10_overloading.csproj", "{94946E38-074F-463E-8B7C-5E020DEC65B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_11_polymorphism", "lab_11_polymorphism\lab_11_polymorphism.csproj", "{53EB8E7C-DE7D-4DEB-BBE0-018BF0197723}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_11_polymorphism", "lab_11_polymorphism\lab_11_polymorphism.csproj", "{53EB8E7C-DE7D-4DEB-BBE0-018BF0197723}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_12_DO_IT_rabbit_explosion", "lab_12_DO_IT\lab_12_DO_IT_rabbit_explosion.csproj", "{CDF6A6D7-CCF4-4598-80CF-D6061FD77593}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_12_DO_IT_rabbit_explosion", "lab_12_DO_IT\lab_12_DO_IT_rabbit_explosion.csproj", "{CDF6A6D7-CCF4-4598-80CF-D6061FD77593}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{A1702328-99EE-4E9F-BE17-291B266DFE0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{A1702328-99EE-4E9F-BE17-291B266DFE0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_13_test_me_out", "lab_13_test_me_out\lab_13_test_me_out.csproj", "{BCF5CDD4-062C-493D-B301-B1615453051D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_13_test_me_out", "lab_13_test_me_out\lab_13_test_me_out.csproj", "{BCF5CDD4-062C-493D-B301-B1615453051D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_14_Files", "lab_14_Files\lab_14_Files.csproj", "{7C0F5DDA-4245-49F8-874F-1BC8437A2748}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_14_Files", "lab_14_Files\lab_14_Files.csproj", "{7C0F5DDA-4245-49F8-874F-1BC8437A2748}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_15_stopwatch", "lab_15_stopwatch\lab_15_stopwatch.csproj", "{4280919C-7351-400D-A671-69A5275B5793}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_15_stopwatch", "lab_15_stopwatch\lab_15_stopwatch.csproj", "{4280919C-7351-400D-A671-69A5275B5793}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam_Rabbit_Explosion", "Sam_Rabbit_Explosion\Sam_Rabbit_Explosion.csproj", "{B141EF3C-9057-4F83-9EC0-FE79C51F074F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sam_Rabbit_Explosion", "Sam_Rabbit_Explosion\Sam_Rabbit_Explosion.csproj", "{B141EF3C-9057-4F83-9EC0-FE79C51F074F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_16_abstract_class", "lab_16_abstract_class\lab_16_abstract_class.csproj", "{91679C48-8D08-46BF-BA27-599B947329A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_16_abstract_class", "lab_16_abstract_class\lab_16_abstract_class.csproj", "{91679C48-8D08-46BF-BA27-599B947329A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_17_security", "lab_17_security\lab_17_security.csproj", "{1B86AB6C-E61E-4BCB-A3D1-D7E4BA3136A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_17_security", "lab_17_security\lab_17_security.csproj", "{1B86AB6C-E61E-4BCB-A3D1-D7E4BA3136A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_18_wpf_rabbit_explosion", "lab_18_wpf_rabbit_explosion\lab_18_wpf_rabbit_explosion.csproj", "{65FFD8BD-7BBF-4DDA-8A5C-3A29939B111D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_19_rabbit_database_explosion", "lab_19_rabbit_database_explosion\lab_19_rabbit_database_explosion.csproj", "{3265A002-8637-4C65-8859-0B258402286A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{65FFD8BD-7BBF-4DDA-8A5C-3A29939B111D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65FFD8BD-7BBF-4DDA-8A5C-3A29939B111D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65FFD8BD-7BBF-4DDA-8A5C-3A29939B111D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3265A002-8637-4C65-8859-0B258402286A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3265A002-8637-4C65-8859-0B258402286A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3265A002-8637-4C65-8859-0B258402286A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3265A002-8637-4C65-8859-0B258402286A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
