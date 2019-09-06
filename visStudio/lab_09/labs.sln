@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_18_wpf_rabbit_explosion
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_19_rabbit_database_explosion", "lab_19_rabbit_database_explosion\lab_19_rabbit_database_explosion.csproj", "{3265A002-8637-4C65-8859-0B258402286A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Just_Do_It_Rabbit_12_Explosion", "Just_Do_It_Rabbit_12_Explosion\Just_Do_It_Rabbit_12_Explosion.csproj", "{66FE0156-C114-4679-BB3D-EB79B7903AC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{3265A002-8637-4C65-8859-0B258402286A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3265A002-8637-4C65-8859-0B258402286A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3265A002-8637-4C65-8859-0B258402286A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66FE0156-C114-4679-BB3D-EB79B7903AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66FE0156-C114-4679-BB3D-EB79B7903AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66FE0156-C114-4679-BB3D-EB79B7903AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66FE0156-C114-4679-BB3D-EB79B7903AC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="auto" Width="auto">
     <Canvas>
-        <TextBox Canvas.Top="40" Canvas.Left="170">Rabbit Name</TextBox>
-        <TextBox Canvas.Top="40" Canvas.Left="270">Rabbit Age</TextBox>
+        <TextBox Name="Name" Canvas.Top="40" Canvas.Left="170">Rabbit Name</TextBox>
+        <TextBox Name="Age" Canvas.Top="40" Canvas.Left="270">Rabbit Age</TextBox>
         <Button Canvas.Top="40" Canvas.Left="470" Click="Button_Click">Add Rabbit</Button>
     </Canvas>
 </Window>
