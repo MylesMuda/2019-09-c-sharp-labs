@@ -6,10 +6,13 @@
         xmlns:local="clr-namespace:Just_Do_It_Rabbit_12_Explosion"
         mc:Ignorable="d"
         Title="MainWindow" Height="auto" Width="auto">
-    <Canvas>
-        <TextBox Name="Name" Canvas.Top="40" Canvas.Left="170">Rabbit Name</TextBox>
-        <TextBox Name="Age" Canvas.Top="40" Canvas.Left="270">Rabbit Age</TextBox>
+    <Canvas HorizontalAlignment="Right" Width="760">
+        <TextBox x:Name="Name" Canvas.Top="40" Canvas.Left="170">Rabbit Name</TextBox>
+        <TextBox x:Name="Age" Canvas.Top="40" Canvas.Left="270">Rabbit Age</TextBox>
         <Button Canvas.Top="40" Canvas.Left="470" Click="Button_Click">Add Rabbit</Button>
-        <ListBox></ListBox>
+        <ListBox x:Name="ListBox1"></ListBox>
+        <TextBlock x:Name="Tb1" Canvas.Bottom="50" Canvas.Left="170"></TextBlock>
+        <TextBlock x:Name="Tb2" Canvas.Bottom="50" Canvas.Left="270"></TextBlock>
+        <Image x:Name="rabbet" Canvas.Bottom="250" Canvas.Left="170" Source="C:\Users\Myles\Downloads\bungus.png" Height="226" Canvas.Top="84" Width="364"></Image>
     </Canvas>
 </Window>

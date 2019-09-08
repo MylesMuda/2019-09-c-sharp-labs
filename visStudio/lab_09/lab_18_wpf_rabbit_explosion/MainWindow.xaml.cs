@@ -40,10 +40,8 @@ namespace lab_18_wpf_rabbit_explosion
         static int counter = 0;
         private void Button01_Click(object sender, RoutedEventArgs e)
         {
-            
             counter++;
             Button01.Content = $"Clicked {counter} times!";
-            
         }
 
         private void newImage()

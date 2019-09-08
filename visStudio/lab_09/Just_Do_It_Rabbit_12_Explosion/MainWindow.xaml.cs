@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace Just_Do_It_Rabbit_12_Explosion
 {
@@ -23,15 +24,33 @@ namespace Just_Do_It_Rabbit_12_Explosion
         public MainWindow()
         {
             InitializeComponent();
+            //rabbet.Visibility = Visibility.Hidden;
+            rabbet.Opacity = 0d;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string RName = Name.Text;
             string RAge = Age.Text;
+            Tb1.Text = RName;
+            Tb2.Text = RAge;
+            //rabbet.Visibility = Visibility.Visible;
+            RabbitAppear();
         }
 
-        
+        public void RabbitAppear()
+        {
+            //rabbet.Visibility = Visibility.Visible;
+            //System.Threading.Thread.Sleep(2000);
+            //rabbet.Visibility = Visibility.Hidden;
+            rabbet.Opacity = 100d;
+            for(int i = 100; i >= 0; i--)
+            {
+                rabbet.Opacity = i;
+                //Thread.Sleep();
+            }
+
+        }
 
 
         //public void PopulateListBox()
