@@ -29,8 +29,22 @@ namespace Just_Do_It_Rabbit_12_Explosion
         {
             string RName = Name.Text;
             string RAge = Age.Text;
-
-
         }
+
+        
+
+
+        //public void PopulateListBox()
+        //{
+        //    using (var db = new RabbitDbEntities())
+        //    {
+        //        List<Rabbit> rabbits = db.Rabbits.ToList();
+
+        //        foreach (Rabbit rb in rabbits)
+        //        {
+        //            listBox.Items.Add(rb.Name);
+        //        }
+        //    }
+        //}
     }
 }
