@@ -26,5 +26,6 @@
         <Button x:Name="ButtonAdd" Grid.Row="1" Grid.Column="0" Background="#E8C3E3" Content="Add" Click="ButtonAdd_Click" />
         <Button x:Name="ButtonEdit" Grid.Row="1" Grid.Column="1" Background="#E8C3E3" Content="Edit" Click="ButtonEdit_Click"/>
         <Button x:Name="ButtonDel" Grid.Row="1" Grid.Column="2" Background="#E8C3E3" Content="Delete" Click="ButtonDel_Click"/>
+        <Button x:Name="ButtonCancel" Grid.Row="2" Grid.Column="2" Background="#E8C3E3" Content="Cancel" Click="ButtonCancel_Click"/>
     </Grid>
 </Window>
