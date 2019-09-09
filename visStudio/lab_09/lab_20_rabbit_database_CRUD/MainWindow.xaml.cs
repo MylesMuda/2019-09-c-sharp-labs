@@ -88,6 +88,11 @@ namespace lab_20_rabbit_database_CRUD
 
                 TextBoxName.IsReadOnly = false;
                 TextBoxAge.IsReadOnly = false;
+
+                ButtonEdit.IsEnabled = false;
+                ButtonDel.IsEnabled = false;
+
+                TextBoxName.Focus();
             }
             else
             {
@@ -133,7 +138,10 @@ namespace lab_20_rabbit_database_CRUD
                 ButtonEdit.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FF1D3A"));
                 TextBoxAge.IsReadOnly = false;
                 TextBoxName.IsReadOnly = false;
+                ButtonAdd.IsEnabled = false;
 
+                TextBoxName.Focus();
+                TextBoxName.SelectAll();
             }
             else //Save mode
             {
@@ -172,12 +180,42 @@ namespace lab_20_rabbit_database_CRUD
                         }
 
                     }
+                    ButtonAdd.IsEnabled = true;
                 }
             }
         }
 
         private void ButtonDel_Click(object sender, RoutedEventArgs e)
         {
+            if(ButtonDel.Content.Equals("Delete"))
+            {
+                ButtonDel.Content = "Confirm Delete";
+
+                ButtonAdd.IsEnabled = false;
+                ButtonEdit.IsEnabled = false;
+            }
+            else
+            {
+                if(rabbit != null)
+                {
+                    using(var db = new RabbitDbEntities())
+                    {
+                        var rabbitToDelete = db.Rabbits.Find(rabbit.RabbitId);
+                        db.Rabbits.Remove(rabbitToDelete);
+                        db.SaveChanges();
+
+                        rabbits = db.Rabbits.ToList();
+                        listBoxRabbits.ItemsSource = rabbits;
+                        TextBoxAge.Text = "";
+                        TextBoxName.Text = "";
+
+                        ButtonAdd.IsEnabled = true;
+                        ButtonEdit.IsEnabled = true;
+                    }
+                }
+
+                ButtonDel.Content = "Delete";
+            }
 
         }
     }

@@ -11,7 +11,7 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
@@ -19,7 +19,7 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="10*" />
         </Grid.RowDefinitions>
-        <Label x:Name="labeHeading" Content="Rabbit App" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" Background="#E8C3E3" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="35" FontWeight="Bold"/>
+        <Label x:Name="labeHeading" Content="Rabbit App" Grid.Column="1" Grid.Row="0" Background="#E8C3E3" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="35" FontWeight="Bold"/>
         <ListBox x:Name="listBoxRabbits" Grid.Row="3" Grid.Column="0" Background="#F9E3FF" DisplayMemberPath="Name" SelectionChanged="ListBoxRabbits_SelectionChanged"/>
         <TextBox x:Name="TextBoxName" Grid.Row="2" Grid.Column="0" Background="#FFD6E5" />
         <TextBox x:Name="TextBoxAge" Grid.Row="2" Grid.Column="1" Background="#FFD6E5" />
