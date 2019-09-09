@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{66FE0156-C114-4679-BB3D-EB79B7903AC6}</ProjectGuid>
+    <ProjectGuid>{59B3BAD4-9867-40D0-8E72-841CFF8A58CE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Just_Do_It_Rabbit_12_Explosion</RootNamespace>
-    <AssemblyName>Just_Do_It_Rabbit_12_Explosion</AssemblyName>
+    <RootNamespace>lab_20_rabbit_database_CRUD</RootNamespace>
+    <AssemblyName>lab_20_rabbit_database_CRUD</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,8 +35,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,10 +64,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Rabbit.cs">
+      <DependentUpon>RabbitModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RabbitModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RabbitModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RabbitModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RabbitModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="RabbitModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RabbitModel.xsd</DependentUpon>
+      <DependentUpon>RabbitModel.edmx</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -91,24 +113,36 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="RabbitModel.xsc">
-      <DependentUpon>RabbitModel.xsd</DependentUpon>
-    </None>
-    <None Include="RabbitModel.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
+    <EntityDeploy Include="RabbitModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>RabbitModel.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="RabbitModel.xss">
-      <DependentUpon>RabbitModel.xsd</DependentUpon>
+    </EntityDeploy>
+    <None Include="RabbitModel.edmx.diagram">
+      <DependentUpon>RabbitModel.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RabbitModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>RabbitModel.Context.cs</LastGenOutput>
+      <DependentUpon>RabbitModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="RabbitModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RabbitModel.edmx</DependentUpon>
+      <LastGenOutput>RabbitModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

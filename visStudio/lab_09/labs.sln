@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_19_rabbit_database_expl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Just_Do_It_Rabbit_12_Explosion", "Just_Do_It_Rabbit_12_Explosion\Just_Do_It_Rabbit_12_Explosion.csproj", "{66FE0156-C114-4679-BB3D-EB79B7903AC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_20_rabbit_database_CRUD", "lab_20_rabbit_database_CRUD\lab_20_rabbit_database_CRUD.csproj", "{59B3BAD4-9867-40D0-8E72-841CFF8A58CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{66FE0156-C114-4679-BB3D-EB79B7903AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66FE0156-C114-4679-BB3D-EB79B7903AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66FE0156-C114-4679-BB3D-EB79B7903AC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59B3BAD4-9867-40D0-8E72-841CFF8A58CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B3BAD4-9867-40D0-8E72-841CFF8A58CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B3BAD4-9867-40D0-8E72-841CFF8A58CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B3BAD4-9867-40D0-8E72-841CFF8A58CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

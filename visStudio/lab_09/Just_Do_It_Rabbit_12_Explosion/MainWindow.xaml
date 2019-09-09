@@ -11,8 +11,8 @@
         <TextBox x:Name="Age" Canvas.Top="40" Canvas.Left="270">Rabbit Age</TextBox>
         <Button Canvas.Top="40" Canvas.Left="470" Click="Button_Click">Add Rabbit</Button>
         <ListBox x:Name="ListBox1"></ListBox>
-        <TextBlock x:Name="Tb1" Canvas.Bottom="50" Canvas.Left="170"></TextBlock>
-        <TextBlock x:Name="Tb2" Canvas.Bottom="50" Canvas.Left="270"></TextBlock>
+        <TextBlock Name="Tb1" Canvas.Bottom="50" Canvas.Left="170"></TextBlock>
+        <TextBlock Name="Tb2" Canvas.Bottom="50" Canvas.Left="270"></TextBlock>
         <Image x:Name="rabbet" Canvas.Bottom="250" Canvas.Left="170" Source="C:\Users\Myles\Downloads\bungus.png" Height="226" Canvas.Top="84" Width="364"></Image>
     </Canvas>
 </Window>
