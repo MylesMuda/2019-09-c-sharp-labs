@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_22_array", "lab_22_arra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_23_collections", "lab_23_collections\lab_23_collections.csproj", "{AAAD8E7E-413B-4FAA-9315-A97ED3DD2B05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_24_Northwind", "lab_24_Northwind\lab_24_Northwind.csproj", "{A4369359-5445-43DA-91D2-3B67B44D45A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{AAAD8E7E-413B-4FAA-9315-A97ED3DD2B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAAD8E7E-413B-4FAA-9315-A97ED3DD2B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAAD8E7E-413B-4FAA-9315-A97ED3DD2B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4369359-5445-43DA-91D2-3B67B44D45A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4369359-5445-43DA-91D2-3B67B44D45A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4369359-5445-43DA-91D2-3B67B44D45A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4369359-5445-43DA-91D2-3B67B44D45A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
