@@ -11,7 +11,6 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
-
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
@@ -27,5 +26,6 @@
         <Button x:Name="ButtonEdit" Grid.Row="1" Grid.Column="1" Background="#E8C3E3" Content="Edit" Click="ButtonEdit_Click"/>
         <Button x:Name="ButtonDel" Grid.Row="1" Grid.Column="2" Background="#E8C3E3" Content="Delete" Click="ButtonDel_Click"/>
         <Button x:Name="ButtonCancel" Grid.Row="2" Grid.Column="2" Background="#E8C3E3" Content="Cancel" Click="ButtonCancel_Click"/>
+        <Image x:Name="Bungus" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Source="C:\Users\Myles Muda\Downloads\bungus.png"/>
     </Grid>
 </Window>
