@@ -5,8 +5,59 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab_26_Customers_App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="auto" Width="auto" FontSize="25">
+    <Grid Background="#B9FFC0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="Title" Content="DEALS AND BUSINESS HERE" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="#37803E" Background="#95CC9A"/>
         
+        <StackPanel x:Name="StackPanel02" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1"
+                    Grid.ColumnSpan="3" Background="#95CC9A">
+            <Label x:Name="SPLabel05" Grid.Column="2" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#37803E" Content="MONEY2" Margin="177,0,164.8,0" />
+            <Button x:Name="butoin06" Grid.Column="2" Content="Butin"/>
+            <Button x:Name="butoin07" Grid.Column="2" Content="Butin"/>
+            <Button x:Name="butoin08" Grid.Column="2" Content="Butin"/>
+            <Button x:Name="butoin09" Grid.Column="2" Content="Butin"/>
+        </StackPanel>
+        
+        <StackPanel x:Name="StackPanel01" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1"
+                    Grid.ColumnSpan="3" Background="#95CC9A">
+            <Label x:Name="SPLabel01" Grid.Column="2" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#37803E" Content="MONEY" />
+            <Button x:Name="CustomerNameFilter" Grid.Column="2" Content="Search by customer name"/>
+            <TextBox x:Name="CustomerSearch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" 
+                     KeyUp="CustomerSearch_KeyUp"/>
+            <!--<Button x:Name="butoin02" Grid.Column="2" Content="Butin"/>
+            <Button x:Name="butoin03" Grid.Column="2" Content="Butin"/>-->
+            <ListBox x:Name="ListBoxCustomers" HorizontalAlignment="Stretch" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock>
+                            <TextBlock.Text>
+                                <MultiBinding StringFormat= " {0,-10}{1,-20}{2} ">
+                                    <Binding Path="CustomerID" />  
+                                    <Binding Path="ContactName" />
+                                    <Binding Path="City" />
+                                </MultiBinding>
+                            </TextBlock.Text>
+                        </TextBlock>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+        
+        <Button x:Name="back" Grid.Column="0" Grid.Row="4" Content="Back" Click="Back_Click"/>
+        <Button x:Name="forward" Grid.Column="4" Grid.Row="4" Content="Forward" Click="Forward_Click"/>
     </Grid>
 </Window>
