@@ -30,6 +30,7 @@ namespace lab_26_Customers_App
         {
             StackPanel01.Visibility = Visibility.Visible;
             StackPanel02.Visibility = Visibility.Collapsed;
+            back.IsEnabled = false;
 
             using (var db = new NorthwindEntities())
             {
@@ -40,15 +41,21 @@ namespace lab_26_Customers_App
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            if(StackPanel01.Visibility == Visibility.Visible)
-            {
-                StackPanel01.Visibility = Visibility.Collapsed;
-                StackPanel02.Visibility = Visibility.Visible;
-            }
-            else if (StackPanel02.Visibility == Visibility.Visible)
+
+            if (StackPanel02.Visibility == Visibility.Visible)
             {
                 StackPanel01.Visibility = Visibility.Visible;
                 StackPanel02.Visibility = Visibility.Collapsed;
+                StackPanel03.Visibility = Visibility.Collapsed;
+                back.IsEnabled = false;
+                forward.IsEnabled = true;
+            }
+            else if (StackPanel03.Visibility == Visibility.Visible)
+            {
+                StackPanel01.Visibility = Visibility.Collapsed;
+                StackPanel02.Visibility = Visibility.Visible;
+                StackPanel03.Visibility = Visibility.Collapsed;
+                forward.IsEnabled = true;
             }
         }
 
@@ -58,11 +65,16 @@ namespace lab_26_Customers_App
             {
                 StackPanel01.Visibility = Visibility.Collapsed;
                 StackPanel02.Visibility = Visibility.Visible;
+                StackPanel03.Visibility = Visibility.Collapsed;
+                back.IsEnabled = true;
+                
             }
             else if (StackPanel02.Visibility == Visibility.Visible)
             {
-                StackPanel01.Visibility = Visibility.Visible;
+                StackPanel01.Visibility = Visibility.Collapsed;
                 StackPanel02.Visibility = Visibility.Collapsed;
+                StackPanel03.Visibility = Visibility.Visible;
+                forward.IsEnabled = false;
             }
         }
 
@@ -73,6 +85,13 @@ namespace lab_26_Customers_App
                 ListBoxCustomers.ItemsSource = db.Customers.Where(c=> c.ContactName.Contains(CustomerSearch.Text)).ToList();
                 //ListBoxCustomers.DisplayMemberPath = "ContactName";
             }
+        }
+
+        
+
+        private void ListBoxCustomers_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

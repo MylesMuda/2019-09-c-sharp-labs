@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:lab_26_Customers_App"
         mc:Ignorable="d"
         Title="MainWindow" Height="auto" Width="auto" FontSize="25">
-    <Grid Background="#B9FFC0">
+    <Grid Background="#B9FFC0" Margin="-4,0,3.6,-0.4">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -22,31 +22,45 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Label x:Name="Title" Content="DEALS AND BUSINESS HERE" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="#37803E" Background="#95CC9A"/>
-        
+
+        <StackPanel x:Name="StackPanel03" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1"
+                    Grid.ColumnSpan="3" Background="#95CC9A">
+            <Label x:Name="SPLabel02" Grid.Column="2" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#37803E" Content="Order Details" Margin="177,0,164.8,0" />
+            <Button x:Name="butoin06" Grid.Column="2" Content="Butin"/>
+            
+        </StackPanel>
+
         <StackPanel x:Name="StackPanel02" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1"
                     Grid.ColumnSpan="3" Background="#95CC9A">
-            <Label x:Name="SPLabel05" Grid.Column="2" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#37803E" Content="MONEY2" Margin="177,0,164.8,0" />
-            <Button x:Name="butoin06" Grid.Column="2" Content="Butin"/>
+            <Label x:Name="SPLabel03" Grid.Column="2" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#37803E" Content="ORDERS" Margin="177,0,164.8,0" />
+            <Button x:Name="butoin04" Grid.Column="2" Content="Butin"/>
             <Button x:Name="butoin07" Grid.Column="2" Content="Butin"/>
             <Button x:Name="butoin08" Grid.Column="2" Content="Butin"/>
             <Button x:Name="butoin09" Grid.Column="2" Content="Butin"/>
+            <ListView>
+                <ListView.View>
+                    <GridView>
+                        
+                    </GridView>
+                </ListView.View>
+            </ListView>
         </StackPanel>
         
         <StackPanel x:Name="StackPanel01" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1"
                     Grid.ColumnSpan="3" Background="#95CC9A">
-            <Label x:Name="SPLabel01" Grid.Column="2" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#37803E" Content="MONEY" />
+            <Label x:Name="SPLabel01" Grid.Column="2" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#37803E" Content="CUSTOMERS" />
             <Button x:Name="CustomerNameFilter" Grid.Column="2" Content="Search by customer name"/>
             <TextBox x:Name="CustomerSearch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" 
                      KeyUp="CustomerSearch_KeyUp"/>
             <!--<Button x:Name="butoin02" Grid.Column="2" Content="Butin"/>
             <Button x:Name="butoin03" Grid.Column="2" Content="Butin"/>-->
-            <ListBox x:Name="ListBoxCustomers" HorizontalAlignment="Stretch" >
-                <ListBox.ItemTemplate>
+            <ListBox x:Name="ListBoxCustomers" HorizontalAlignment="Stretch" SelectionChanged="ListBoxCustomers_SelectionChanged" FontFamily="Courier New">
+                <ListBox.ItemTemplate> 
                     <DataTemplate>
                         <TextBlock>
                             <TextBlock.Text>
                                 <MultiBinding StringFormat= " {0,-10}{1,-20}{2} ">
-                                    <Binding Path="CustomerID" />  
+                                    <Binding Path="CustomerID" />
                                     <Binding Path="ContactName" />
                                     <Binding Path="City" />
                                 </MultiBinding>
