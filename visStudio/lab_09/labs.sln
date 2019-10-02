@@ -71,9 +71,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_36_API_Northwind", "lab
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_37_API_To_Do", "lab_37_API_To_Do\lab_37_API_To_Do.csproj", "{882BACD5-5B0A-4E09-9581-7E07ED0B72EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_38_reference_value_types", "lab_38_reference_value_types\lab_38_reference_value_types.csproj", "{51FEB3E6-C400-4F08-8CEB-66C6E40BF851}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_38_reference_value_types", "lab_38_reference_value_types\lab_38_reference_value_types.csproj", "{51FEB3E6-C400-4F08-8CEB-66C6E40BF851}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_39_overflow", "lab_39_overflow\lab_39_overflow.csproj", "{332D1A19-8548-4701-AF4F-DBCE11DC5CFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_39_overflow", "lab_39_overflow\lab_39_overflow.csproj", "{332D1A19-8548-4701-AF4F-DBCE11DC5CFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_40_raw_sql", "lab_40_raw_sql\lab_40_raw_sql.csproj", "{45CB1721-DE8D-416C-A84E-4F7706B832A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +227,10 @@ Global
 		{332D1A19-8548-4701-AF4F-DBCE11DC5CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{332D1A19-8548-4701-AF4F-DBCE11DC5CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{332D1A19-8548-4701-AF4F-DBCE11DC5CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45CB1721-DE8D-416C-A84E-4F7706B832A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45CB1721-DE8D-416C-A84E-4F7706B832A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45CB1721-DE8D-416C-A84E-4F7706B832A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45CB1721-DE8D-416C-A84E-4F7706B832A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

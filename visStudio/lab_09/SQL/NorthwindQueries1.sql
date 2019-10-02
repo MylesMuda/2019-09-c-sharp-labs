@@ -41,5 +41,13 @@ select sum(unitprice*quantity*(1-discount)) from [Order Details]
 select
 sum(unitprice*quantity) as GrossSales,
 sum(unitprice*quantity*(1-discount)) as DiscountedSales,
-sum(unitprice*quantity) - sum(unitprice*quantity*(1-discount)) as 'Discount Given'
+--sum(unitprice*quantity) - sum(unitprice*quantity*(1-discount)) as 'Discount Given',
+(sum(UnitPrice*Quantity*Discount)) as 'Discount Given'
 from [Order Details];
+
+--GROUP BY
+select 'GROUP BY';
+select SupplierID, sum(UnitsOnOrder) as 'Total Units in Order' from products
+group by SupplierID
+order by 'Total Units in Order' desc;
+
