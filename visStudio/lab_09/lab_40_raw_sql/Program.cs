@@ -8,15 +8,21 @@ namespace lab_40_raw_sql
     class Program
     {
         static List<Customer> customers = new List<Customer>();
-        //static string connnectionString = @"Data Source=localhost;Initial Catalog=Northwind;
-        //                                  Persist Security Info=True; User ID=SA; Password=Passw0rd2018";
+        static string connectionString = null;
         static string connectionString2 = @"Data Source=(localdb)\mssqllocaldb;Initial Catalog=Northwind;";
         static void Main(string[] args)
         {
+            Environment.SetEnvironmentVariable("SecretPassword", "Passw0rd2018");
+            var secret = Environment.GetEnvironmentVariable("SecretPassword");
+
+            connectionString = $"Data Source = localhost;Initial Catalog=Northwind;Persist Security Info=True; User ID=SA; Password={secret}";
+
             InsertCustomer();
             UpdateCustomer();
             DeleteCustomer();
             GetCustomers();
+
+            
         }
 
         static void GetCustomers()
@@ -127,24 +133,21 @@ namespace lab_40_raw_sql
                 }
             }
         }
-        
+
         static void DeleteCustomer()
         {
-            using(var connection = new SqlConnection(connectionString2))
+            using (var connection = new SqlConnection(connectionString2))
             {
                 connection.Open();
                 var customerToDelete = "MTAFT";
                 var sqlDelete = $"DELETE FROM Customers WHERE CustomerID = '{customerToDelete}'";
-                using(var command = new SqlCommand(sqlDelete, connection))
+                using (var command = new SqlCommand(sqlDelete, connection))
                 {
                     int affected = command.ExecuteNonQuery();
                     Console.WriteLine($"Number of records deleted : {affected}");
                 }
-            }    
+            }
         }
-
-
-
     }
 
     public partial class Customer
