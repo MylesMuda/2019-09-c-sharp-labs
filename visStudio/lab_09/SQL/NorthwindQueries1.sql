@@ -49,5 +49,5 @@ from [Order Details];
 select 'GROUP BY';
 select SupplierID, sum(UnitsOnOrder) as 'Total Units in Order' from products
 group by SupplierID
+having sum(UnitsOnOrder) = 0
 order by 'Total Units in Order' desc;
-

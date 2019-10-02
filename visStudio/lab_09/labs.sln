@@ -75,7 +75,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_38_reference_value_type
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_39_overflow", "lab_39_overflow\lab_39_overflow.csproj", "{332D1A19-8548-4701-AF4F-DBCE11DC5CFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_40_raw_sql", "lab_40_raw_sql\lab_40_raw_sql.csproj", "{45CB1721-DE8D-416C-A84E-4F7706B832A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_40_raw_sql", "lab_40_raw_sql\lab_40_raw_sql.csproj", "{45CB1721-DE8D-416C-A84E-4F7706B832A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_41_environment_variables", "lab_41_environment_variables\lab_41_environment_variables.csproj", "{347DFF5F-3EC6-44C0-B972-91562F6065E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -231,6 +233,10 @@ Global
 		{45CB1721-DE8D-416C-A84E-4F7706B832A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45CB1721-DE8D-416C-A84E-4F7706B832A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45CB1721-DE8D-416C-A84E-4F7706B832A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{347DFF5F-3EC6-44C0-B972-91562F6065E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{347DFF5F-3EC6-44C0-B972-91562F6065E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{347DFF5F-3EC6-44C0-B972-91562F6065E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{347DFF5F-3EC6-44C0-B972-91562F6065E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
