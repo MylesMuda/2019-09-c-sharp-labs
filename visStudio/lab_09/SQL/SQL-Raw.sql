@@ -43,4 +43,15 @@ HAVING (SUM((Quantity*UnitPrice)*1-Discount) > 1000000);
 -- (AMOUNT OF DISCOUNT APPLIED)
 SELECT top 1 *
 from [Order Details]
-where MAX(Discount) 
+where MAX(Discount)
+
+--2.1
+
+create table Spartans(
+    SpartanID int not null identity primary key,
+    SpartanFName varchar(20) null,
+    SpartanLName varchar(20) null,
+    SpartanUni varchar(40) null,
+    Course varchar(30) null,
+    Mark int null
+)
