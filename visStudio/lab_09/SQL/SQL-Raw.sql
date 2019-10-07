@@ -36,17 +36,24 @@ INNER JOIN Orders on EmployeeTerritories.EmployeeID = Orders.EmployeeID
 INNER JOIN [Order Details] on [Order Details].OrderID = Orders.OrderID
 GROUP BY RegionDescription
 HAVING (SUM((Quantity*UnitPrice)*1-Discount) > 1000000); 
-
---1.7	Count how many Orders have a Freight amount greater than 100.00 and either USA or UK as Ship Country.
-
---1.8	Write an SQL Statement to identify the Order Number of the Order with the highest amount of discount applied to that order.
--- (AMOUNT OF DISCOUNT APPLIED)
-SELECT top 1 *
+    
+--1.7
+--Count how many Orders have a Freight amount greater
+--than 100.00 and either USA or UK as Ship Country.
+select * from Orders
+where ShipCountry IN ('USA', 'UK') and Freight > 100 
+order by Freight asc
+--1.8 Write an SQL Statement to identify the 
+--Order Number of the Order
+--with the highest amount 
+--of discount applied to that order.
+select top 1 OrderID, 
+sum(UnitPrice * Quantity * Discount) as 'Discount Given'
 from [Order Details]
-where MAX(Discount)
+Group by OrderID
+order by sum(UnitPrice * Quantity * Discount) desc
 
 --2.1
-
 create table Spartans(
     SpartanID int not null identity primary key,
     SpartanFName varchar(20) null,
@@ -55,3 +62,21 @@ create table Spartans(
     Course varchar(30) null,
     Mark int null
 )
+
+select * from Spartans
+
+-- 3.1
+Select Employees.EmployeeID, Employees.FirstName, Employees.LastName, concat(Managers.FirstName, ' ', Managers.LastName) as ReportsTo from Employees
+join Employees as Managers on Employees.ReportsTo = Managers.EmployeeID;
+
+--3.2
+
+select * from [Order Details]
+
+select distinct * from Products where UnitsInStock > 100
+
+select distinct Products.CategoryID from Products where UnitsInStock > 100
+
+select 
+
+select Freight from 

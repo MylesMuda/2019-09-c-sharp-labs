@@ -13,6 +13,6 @@
         <ListBox x:Name="ListBox1"></ListBox>
         <TextBlock Name="Tb1" Canvas.Bottom="50" Canvas.Left="170"></TextBlock>
         <TextBlock Name="Tb2" Canvas.Bottom="50" Canvas.Left="270"></TextBlock>
-        <Image x:Name="rabbet" Canvas.Bottom="250" Canvas.Left="170" Source="C:\Users\Myles\Downloads\bungus.png" Height="226" Canvas.Top="84" Width="364"></Image>
+        <Image x:Name="rabbet" Canvas.Bottom="250" Canvas.Left="170" Height="226" Canvas.Top="84" Width="364"></Image>
     </Canvas>
 </Window>

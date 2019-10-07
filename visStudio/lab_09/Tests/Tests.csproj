@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\just_do_it_17_enum_with_tests\just_do_it_17_enum_with_tests.csproj" />
     <ProjectReference Include="..\lab_13_test_me_out\lab_13_test_me_out.csproj" />
     <ProjectReference Include="..\Sam_Rabbit_Explosion\Sam_Rabbit_Explosion.csproj" />
   </ItemGroup>

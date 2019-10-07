@@ -218,5 +218,10 @@ namespace lab_20_rabbit_database_CRUD
             }
 
         }
+
+        private void TextBoxName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

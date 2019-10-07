@@ -20,12 +20,12 @@
         </Grid.RowDefinitions>
         <Label x:Name="labeHeading" Content="Rabbit App" Grid.Column="1" Grid.Row="0" Background="#E8C3E3" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="35" FontWeight="Bold"/>
         <ListBox x:Name="listBoxRabbits" Grid.Row="3" Grid.Column="0" Background="#F9E3FF" DisplayMemberPath="Name" SelectionChanged="ListBoxRabbits_SelectionChanged"/>
-        <TextBox x:Name="TextBoxName" Grid.Row="2" Grid.Column="0" Background="#FFD6E5" />
+        <TextBox x:Name="TextBoxName" Grid.Row="2" Grid.Column="0" Background="#FFD6E5" TextChanged="TextBoxName_TextChanged" />
         <TextBox x:Name="TextBoxAge" Grid.Row="2" Grid.Column="1" Background="#FFD6E5" />
         <Button x:Name="ButtonAdd" Grid.Row="1" Grid.Column="0" Background="#E8C3E3" Content="Add" Click="ButtonAdd_Click" />
         <Button x:Name="ButtonEdit" Grid.Row="1" Grid.Column="1" Background="#E8C3E3" Content="Edit" Click="ButtonEdit_Click"/>
         <Button x:Name="ButtonDel" Grid.Row="1" Grid.Column="2" Background="#E8C3E3" Content="Delete" Click="ButtonDel_Click"/>
-        <Button x:Name="ButtonCancel" Grid.Row="2" Grid.Column="2" Background="#E8C3E3" Content="Cancel" Click="ButtonCancel_Click"/>
+        <!--<Button x:Name="ButtonCancel" Grid.Row="2" Grid.Column="2" Background="#E8C3E3" Content="Cancel" Click="ButtonCancel_Click"/>-->
         <Image x:Name="Bungus" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Source="C:\Users\Myles Muda\Downloads\bungus.png"/>
     </Grid>
 </Window>

@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System;
 using lab_13_test_me_out;
 using Sam_Rabbit_Explosion;
+using just_do_it_17_enum_with_tests;
 namespace Tests
 {
     public class Tests
@@ -9,6 +10,7 @@ namespace Tests
         [SetUp]
         public void Setup()
         {
+
         }
 
         //[Test]
@@ -38,6 +40,13 @@ namespace Tests
             var actualYears = Sam_Rabbit_Explosion.JustDoItRabbitExplosion.RabbitExponentialGrowth(populationLimit).ToTuple().Item1;
             //assert
             Assert.AreEqual(actualYears, expYears);
+        }
+
+        [TestCase(1,2,"Monday","February")]
+        public void TestGetDayMonth(int day, int month, string expectedDay, string expectedMonth)
+        {
+            var actual = TestEnums.GetDayMonth(day, month);
+            Assert.AreEqual(actual, (expectedDay, expectedMonth));
         }
     }
 }
