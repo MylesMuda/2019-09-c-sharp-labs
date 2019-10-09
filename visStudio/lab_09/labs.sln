@@ -101,13 +101,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_46_assemblies", "lab_46
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_47_streaming", "lab_47_streaming\lab_47_streaming.csproj", "{7148AA97-4E9B-4F8D-B3E6-D9A231B428D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "just_do_it_18_OOP_refresher", "just_do_it_18_OOP_refresher\just_do_it_18_OOP_refresher.csproj", "{F2A2DA65-F66A-4239-863B-54BAD002DE80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "just_do_it_18_OOP_refresher", "just_do_it_18_OOP_refresher\just_do_it_18_OOP_refresher.csproj", "{F2A2DA65-F66A-4239-863B-54BAD002DE80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_48_API_Web", "lab_48_API_Web\lab_48_API_Web.csproj", "{82BF5F27-85F9-4961-A8F9-37EEA803572E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_48_API_Web", "lab_48_API_Web\lab_48_API_Web.csproj", "{82BF5F27-85F9-4961-A8F9-37EEA803572E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_48_read_API", "lab_48_read_API\lab_48_read_API.csproj", "{9E0B6175-11B7-4482-A2EA-26B000E4C951}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_48_read_API", "lab_48_read_API\lab_48_read_API.csproj", "{9E0B6175-11B7-4482-A2EA-26B000E4C951}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_48_mvc_consume_API", "lab_48_mvc_consume_API\lab_48_mvc_consume_API.csproj", "{D271A972-DD9B-4F97-9722-24014005AA54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_48_mvc_consume_API", "lab_48_mvc_consume_API\lab_48_mvc_consume_API.csproj", "{D271A972-DD9B-4F97-9722-24014005AA54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_49_API_Framework", "lab_49_API_Framework\lab_49_API_Framework.csproj", "{F8E2CF44-B6CA-4898-A9A3-7E5BEA06C89F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_49_API", "lab_49_API\lab_49_API.csproj", "{590D1B94-C5F2-40F5-A65E-178F29E4B832}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -759,6 +763,30 @@ Global
 		{D271A972-DD9B-4F97-9722-24014005AA54}.Release|iPhone.Build.0 = Release|Any CPU
 		{D271A972-DD9B-4F97-9722-24014005AA54}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{D271A972-DD9B-4F97-9722-24014005AA54}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{F8E2CF44-B6CA-4898-A9A3-7E5BEA06C89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E2CF44-B6CA-4898-A9A3-7E5BEA06C89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E2CF44-B6CA-4898-A9A3-7E5BEA06C89F}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{F8E2CF44-B6CA-4898-A9A3-7E5BEA06C89F}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{F8E2CF44-B6CA-4898-A9A3-7E5BEA06C89F}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{F8E2CF44-B6CA-4898-A9A3-7E5BEA06C89F}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{F8E2CF44-B6CA-4898-A9A3-7E5BEA06C89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E2CF44-B6CA-4898-A9A3-7E5BEA06C89F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E2CF44-B6CA-4898-A9A3-7E5BEA06C89F}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{F8E2CF44-B6CA-4898-A9A3-7E5BEA06C89F}.Release|iPhone.Build.0 = Release|Any CPU
+		{F8E2CF44-B6CA-4898-A9A3-7E5BEA06C89F}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{F8E2CF44-B6CA-4898-A9A3-7E5BEA06C89F}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{590D1B94-C5F2-40F5-A65E-178F29E4B832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{590D1B94-C5F2-40F5-A65E-178F29E4B832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{590D1B94-C5F2-40F5-A65E-178F29E4B832}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{590D1B94-C5F2-40F5-A65E-178F29E4B832}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{590D1B94-C5F2-40F5-A65E-178F29E4B832}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{590D1B94-C5F2-40F5-A65E-178F29E4B832}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{590D1B94-C5F2-40F5-A65E-178F29E4B832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{590D1B94-C5F2-40F5-A65E-178F29E4B832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{590D1B94-C5F2-40F5-A65E-178F29E4B832}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{590D1B94-C5F2-40F5-A65E-178F29E4B832}.Release|iPhone.Build.0 = Release|Any CPU
+		{590D1B94-C5F2-40F5-A65E-178F29E4B832}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{590D1B94-C5F2-40F5-A65E-178F29E4B832}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
