@@ -63,6 +63,7 @@ create table Spartans(
     Mark int null
 )
 
+<<<<<<< Updated upstream
 select * from Spartans
 
 -- 3.1
@@ -80,3 +81,10 @@ select distinct Products.CategoryID from Products where UnitsInStock > 100
 select 
 
 select Freight from 
+=======
+--1.8	Write an SQL Statement to identify the Order Number of the Order with the highest amount of discount applied to that order.
+-- (AMOUNT OF DISCOUNT APPLIED)
+SELECT top 1 *
+from [Order Details]
+--where MAX(Discount) 
+>>>>>>> Stashed changes
