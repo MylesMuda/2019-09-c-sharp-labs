@@ -1,9 +1,10 @@
-﻿using System;
+﻿using lab_48_API_Web.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace lab_48_mvc_consume_API.Models
+namespace lab_48_API_Web.Models
 {
     public class Product
     {
